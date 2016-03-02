@@ -11,7 +11,7 @@ Copy production's themes, plugins, uploads.
 Make directory in which to place them.  
 
 ```
-$ mkdir -p wp-on-docker/volume/{themes, plugins, uploads}
+$ mkdir -p wp-on-docker/volume/{themes,plugins,uploads}
 ```
 
 Also, place the dump file of the production environment database.  
