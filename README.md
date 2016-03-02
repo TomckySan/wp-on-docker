@@ -14,6 +14,9 @@ Make directory in which to place them.
 $ mkdir -p wp-on-docker/volume/{themes, plugins, uploads}
 ```
 
+Also, place the dump file of the production environment database.  
+Default is `wp-on-docker/mysql/db.dump.sql`.
+
 For modifying a string throughout a database, install [Search Replace DB](https://github.com/interconnectit/Search-Replace-DB).  
 Make directory in which to place Search Replace DB.  
 
