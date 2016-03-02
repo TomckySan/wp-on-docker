@@ -1,0 +1,19 @@
+wordpress:
+  build: ./wordpress
+  ports:
+    - "80:80"
+  volumes:
+    - ./wordpress/volume/themes/mytheme:/var/www/html/wp-content/themes/mytheme
+    - ./wordpress/volume/plugins:/var/www/html/wp-content/plugins
+    - ./wordpress/volume/uploads:/var/www/html/wp-content/uploads
+    - ./wordpress/volume/Search-Replace-DB-master:/var/www/html/Search-Replace-DB-master
+  links:
+    - db:mysql
+  privileged: true
+
+db:
+  build: ./mysql
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
