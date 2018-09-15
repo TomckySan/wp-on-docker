@@ -1,0 +1,9 @@
+/wordpress/volume/plugins/*
+!/wordpress/volume/plugins/.gitkeep
+/wordpress/volume/themes/*
+!/wordpress/volume/themes/.gitkeep
+/wordpress/volume/uploads/*
+!/wordpress/volume/uploads/.gitkeep
+
+.DS_Store
+*.swp
